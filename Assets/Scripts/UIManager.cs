@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+
 /// <summary>
 /// Class representing the User Interface Manager.
 /// </summary>
@@ -101,6 +102,6 @@ public class UIManager : MonoBehaviour
         if (new_state == 3) instrumentsMenu.SetActive(true);
     }
 }
-// Turns out UnityEvents doesn't support enums but still used for readabilit
+// Turns out UnityEvents doesn't support enums but still used for readability
 // even though it requires a conversion to int
 public enum MenuState { Master, Weapons, Points, Instruments }

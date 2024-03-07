@@ -18,6 +18,10 @@ public class FloatingObjectLabel : MonoBehaviour
     private void Start()
     {
         mainCamera = GameManagerSingleton.instance.GetCamera();
+
+
+        viewOffset.x *= Screen.width;
+        viewOffset.y *= Screen.height;
     }
 
     private void Update()
